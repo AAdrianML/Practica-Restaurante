@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<!--responsive design (para dispositivos moviles)-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+	<title>Cafe Adrian Madrigal Lopez</title>
+	
+</head>
+<body>
+
+	<!--------------------------Header-------------------------->
+	<!---->
+	<header>
+		<!--para poder centrar el contenido-->
+		<div class="contenedor">
+			<!--menu de navegacion-->
+			<nav class="menu">
+				<!--se les va a agregar un id para ponerle eventos en jquery-->
+				<a href="#" id="btn-acerca-de">Acerca de</a>
+				<a href="#" id="btn-menu">Menu</a>
+				<a href="#" id="btn-galeria">Galeria</a>
+				<a href="#" id="btn-ubicacion">Ubicacion</a>
+			</nav>
+			<div class="textos">
+				<!--con span le voy a poner formato a esa parte del texto-->
+				<h1 class="nombre">Cafe <span>Adrian Madrigal</span></h1>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</h3>
+			</div>
+		</div>
+	</header>
+
+	<!--------------------------MAIN-------------------------->
+
+	<section class="main">
+
+		<!--------------------------ACERCA DE-------------------------->
+
+		<section class="acerca-de" id="acerca-de">
+			<!--para poder centrar el contenido-->
+			<div class="contenedor">
+				<div class="foto">
+					<img src="img/acerca-de.jpg">
+				</div>
+				<article>
+					<h3>Acerca de</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+
+				</article>
+			</div>
+		</section>
+
+		<!--------------------------MENU-------------------------->
+		<!--no hay problema si repito la clase menu porque una esta en el header y esta esta en el main-->
+
+		<section class="menu">
+			<div class="contenedor">
+				<h3 class="titulo" id="platillos">Menu</h3>
+				<!--voy a poner dos contenedores-menu para poder hacer un borde dentro de otro-->
+				<div class="contenedor-menu">
+					<div class="contenedor-menu2">
+						<!--porque los platillos son como productos que queremos mostrar-->
+						<article>
+							<p class="categoria">De comer</p>
+							<div class="platillo">
+								<p class="nombre">1 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$15</p>
+								<br/>
+								<p class="descripcion"> Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+
+								<div class="platillo">
+								<p class="nombre">2 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$10</p>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+
+								<div class="platillo">
+								<p class="nombre">3 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$30</p>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+
+								<div class="platillo">
+								<p class="nombre">4 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$25</p>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</article>
+
+						<article>
+							<p class="categoria">De Tomar</p>
+							<div class="platillo">
+								<p class="nombre">1 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$5</p>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+
+								<div class="platillo">
+								<p class="nombre">2 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$8</p>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+
+								<div class="platillo">
+								<p class="nombre">3 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$15</p>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+
+								<div class="platillo">
+								<p class="nombre">4 Lorem ipsum dolor sit amet</p>
+								<p class="precio">$7.50</p>
+								<p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							</div>
+						</article>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--------------------------GALERIA-------------------------->
+
+		<section class="galeria" id="galeria">
+			<div class="foto">
+				<img src="img/1.jpg">
+			</div>
+
+			<div class="foto">
+				<img src="img/2.jpg">
+			</div>
+
+			<div class="foto">
+				<img src="img/3.jpg">
+			</div>
+
+			<div class="foto">
+				<img src="img/4.jpg">
+			</div>
+
+			<div class="foto">
+				<img src="img/5.jpg">
+			</div>
+
+			<div class="foto">
+				<img src="img/6.jpg">
+			</div>
+
+			<div class="foto">
+				<img src="img/7.jpg">
+			</div>
+
+			<div class="foto">
+				<img src="img/8.jpg">
+			</div>
+
+		</section>
+
+		<!--------------------------UBICACION-------------------------->
+
+		<section class="ubicacion" id="ubicacion">
+			<div class="contenedor">
+				<h3 class="titulo">Ubicacion</h3>
+				<div class="direccion">
+					<p class="calle">2929 calle 123 <br /> los demas de la direccion</p>
+					
+					<p class="telefono">(123)123456789</p>
+					<p class="correo">correo [arroba] tu correo.com</p>
+				</div>
+				<div class="horarios">
+					<h4>Horarios</h4>
+					<p class="entre-semana">Lunes a Viernes <br> 8:00am - 9:00pm</p>
+					<p class="fin-semana">Sabados y Domingos <br> 11:00am - 11:00pm</p>
+				</div>
+			</div>
+		</section>
+
+		<!--------------------------MAPA DE GOOGLE MAPS-------------------------->
+		<section class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.441033651721!2d-107.40267968454778!3d24.814586853204986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcd0a76213076f%3A0xa0f9556f4de4be4!2sForum%20Culiac%C3%A1n%20Centro%20Comercial!5e0!3m2!1ses-419!2smx!4v1604017206512!5m2!1ses-419!2smx" width="1600" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</section>
+	</section>
+
+
+		<!--------------------------PIE DE PAGINA-------------------------->
+	<footer>
+		<div class="contenedor">
+			<div class="copyright">
+				<p>Copyright Adrian Madrigal Lopez @ 2016</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/efectos.js"></script>
+	<script src="js/parallax.js"></script>
+</body>
+</html>
